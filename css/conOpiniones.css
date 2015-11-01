@@ -1,0 +1,13 @@
+#anterior{
+	margin-right: 10px;
+}
+
+.col-md-2{
+	width: 16%;
+}
+
+#cloud{
+	width: 30%;
+	float: right;
+	margin-top: -30px;
+}

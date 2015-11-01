@@ -1,0 +1,50 @@
+#cuerpo{
+	width: 80%;
+}
+
+.titulo{
+	font-size: 52px;
+	font-family: 'Lobster', cursive;
+}
+
+.footer{
+	color: #000000;
+	font-family: 'Lobster', cursive;	
+}
+
+h3{
+    margin: 0;     
+    color: #979090;
+    padding-top: 90px;
+    font-size: 52px;
+    font-family: "trebuchet ms", sans-serif;    
+}
+.item{
+    background: #333;    
+    text-align: center;
+    height: 500px !important;
+}
+.carousel{
+    margin-top: 20px;
+    width: 80%;
+}
+.bs-example{
+	font-family: sans-serif;
+	position: relative;
+	margin: 100px;
+}
+
+
+.clsDatePicker {
+    z-index:1151 !important;
+}
+
+.clsTimePicker {
+    z-index:1151 !important;
+}
+
+p{
+    width: 97.5%;
+    text-align: justify;
+    text-justify: inter-word;
+}

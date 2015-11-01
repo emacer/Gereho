@@ -1,0 +1,19 @@
+#login{
+	width: 200px;
+	height: 180px;
+	background: #426C98;
+	border-radius: 2px;
+	padding: 10px;
+	position: absolute;
+	color: #000;
+	top: 52px;
+	left: 85%;
+}
+
+#enviar{
+	background: #3DB43D;
+	height: 30px;
+	width: 40%;
+	top: 5px;
+	position: relative;
+}
