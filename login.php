@@ -17,7 +17,7 @@
 	        define($key, $value);
 	    }
 		//conexion a la base de datos
-		$conn=mysqli_connect(hostMySQL,user,pwd,base);
+		$conn=mysqli_connect(hostMysql,userMysql,pwdMysql,baseMysql);
 		// Chequeo la conexion
 		if ($conn->connect_error) {
 		    die("Connection failed: " . $conn->connect_error);

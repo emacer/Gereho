@@ -19,7 +19,7 @@
 				<li><a href="opinion.php">Tu Opinion</a></li>				
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li id="btn_nosotros" class=""><a href="#">Nosotros</a></li>
+				<li id="btn_nosotros" class=""><a href="about.php">Nosotros</a></li>
 				<li id="btn_login" class=""><a href="#">Login</a></li>
 			</ul>
 		</div>

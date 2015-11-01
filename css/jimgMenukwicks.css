@@ -34,23 +34,23 @@
 	height: 200px;
 }
 
-.jimgMenu ul li#landscapes a {
+.jimgMenu ul li#hotel a {
 	background: url(imagenes/hotel.jpg) repeat scroll 0%;
   
 }
 
-.jimgMenu ul li#people a {
+.jimgMenu ul li#interior a {
 	background: url(imagenes/interior.jpg) repeat scroll 0%;
 
 }
 
-.jimgMenu ul li#nature a {
+.jimgMenu ul li#paisajes a {
 	background: url(imagenes/paisajes.jpg) repeat scroll 0%;
   
 }
 
-.jimgMenu ul li#abstract a {
-	background: url(imagenes/abstract.jpg) repeat scroll 0%;
+.jimgMenu ul li#excursiones a {
+	background: url(imagenes/excursiones.jpg) repeat scroll 0%;
 
 }
 

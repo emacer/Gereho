@@ -21,8 +21,8 @@
 	$cursor = $collection->find(array('date' => array('$gte' => $start, '$lte' => $end)));	
 	$cursorp = $collection->find(array('date' => array('$gte' => $start, '$lte' => $end),'polaridad' => "pos"));
 	$cursorn = $collection->find(array('date' => array('$gte' => $start, '$lte' => $end),'polaridad' => "neg"));
-    $cursorfp = $collection->find(array('date' => array('$gte' => $start, '$lte' => $end),'polaridad' => "neg", 'cambio' => 1));
-    $cursorfn = $collection->find(array('date' => array('$gte' => $start, '$lte' => $end),'polaridad' => "pos", 'cambio' => 1));
+    $cursorfp = $collection->find(array('date' => array('$gte' => $start, '$lte' => $end),'polaridad' => "neg", 'modificado' => 1));
+    $cursorfn = $collection->find(array('date' => array('$gte' => $start, '$lte' => $end),'polaridad' => "pos", 'modificado' => 1));
 	
 	$num_docs = $cursor->count();
 

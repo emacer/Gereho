@@ -26,7 +26,7 @@ if (isset($_GET["salir"])){
 				<li><a href="conOpiniones.php">Opiniones</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li id="btn_nosotros" class=""><a href="#">Nosotros</a></li>
+				<li id="btn_nosotros" class=""><a href="aboutgere.php">Nosotros</a></li>
 				<li id="btn_desloguear" class=""><a href="menugere.php?salir=1">Salir</a></li>
 			</ul>
 		</div>

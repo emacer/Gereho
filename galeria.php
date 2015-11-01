@@ -28,10 +28,10 @@
 		<section>
 			<div class="jimgMenu">
 				<ul>
-					<li id="landscapes"><a href="javascript:pedirGaleria('galeria1.php');">Hoteles</a></li>
-					<li id="people"><a href="javascript:pedirGaleria('galeria2.php');">Interior</a></li>
-					<li id="nature"><a href="javascript:pedirGaleria('galeria3.php');">Paisajes</a></li>
-					<li id="abstract"><a href="#">Abstract</a></li>
+					<li id="hotel"><a href="javascript:pedirGaleria('galeria1.php');">Hoteles</a></li>
+					<li id="interior"><a href="javascript:pedirGaleria('galeria2.php');">Interior</a></li>
+					<li id="paisajes"><a href="javascript:pedirGaleria('galeria3.php');">Paisajes</a></li>
+					<li id="excursiones"><a href="javascript:pedirGaleria('galeria4.php');">Excursiones</a></li>
 					<li id="urban"><a href="#">Urban</a></li>
 				</ul>
 			</div>
