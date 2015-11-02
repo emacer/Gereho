@@ -5,6 +5,7 @@
 	 	<link rel="stylesheet" href="css/menu.css">
 	 	<link rel="stylesheet" type="text/css" href="css/jimgMenukwicks.css">
 	 	<link rel="stylesheet" href="css/zoomwall.css">
+	 	<link rel="stylesheet" href="css/galeria.css">
 	
 	 	<script src="js/jquery-1.7.1.min.js"></script>
 		<script src="js/jquery-easing-1.3.pack.js"></script>
@@ -22,11 +23,42 @@
 
 	</head>
 	<body>
-	<?php include "menu.php" ?>	
+	<?php 
+		include "menu.php" 
+		include "funcionesGaleria.php"
+	?>	
 	
 	<center>
 		<section>
-			<div class="jimgMenu">
+			<div id="tableCategoria">
+				<table>
+					<th>Categoria</th>
+					<th id="pos" colspan="2">Positivo</th>
+					<th id="neg" colspan="2">Negativo</th>
+			  		<tr>
+				    	<td>Solo</td>
+				    	<td><img id="logo" src="imagen/pos.png"></td> 
+				    	<td>porcentaje</td>
+				    	<td><img id="logo" src="imagen/neg.png"></td> 
+				    	<td><?=categorias();?></td>
+				  	</tr>
+				  	<tr>
+				    	<td>Pareja</td>
+				    	<td><img id="logo" src="imagen/pos.png"></td> 
+				    	<td>porcentaje</td>
+				    	<td><img id="logo" src="imagen/neg.png"></td> 
+				    	<td>porcentaje</td>
+				  	</tr>
+				  	<tr>
+				    	<td>Familia</td>
+				    	<td><img id="logo" src="imagen/pos.png"></td> 
+				    	<td>porcentaje</td>
+				    	<td><img id="logo" src="imagen/neg.png"></td>
+				    	<td>porcentaje</td>
+				  	</tr>
+				</table>
+			</div>
+			<div id="menuImagen" class="jimgMenu">
 				<ul>
 					<li id="hotel"><a href="javascript:pedirGaleria('galeria1.php');">Hoteles</a></li>
 					<li id="interior"><a href="javascript:pedirGaleria('galeria2.php');">Interior</a></li>
@@ -36,8 +68,7 @@
 				</ul>
 			</div>
 		</section>
-		<br><br><br>
-		<section>
+		<section class="col-md-12">
 			<div id="zoomwall" class="zoomwall">
 				<script>
 					pedirGaleria('galeria1.php');

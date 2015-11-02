@@ -1,0 +1,35 @@
+#tableCategoria{
+	float: right;
+	margin-right: 5%;
+}
+
+#menuImagen{
+	float: left;
+	margin-left: 20%;
+}
+
+#zoomwall{
+	margin-top: 30px;
+}
+
+table, th, td {
+    border: 2px solid black;
+}
+th, td {
+    padding: 12px;
+}
+
+#pos{
+	background-color: green;
+	color: white;
+}
+
+#neg{
+	background-color: red;
+	color: white;
+}
+
+#logo{
+	width: 25px;
+	height: 25px;
+}
