@@ -1,11 +1,12 @@
 function enviarForm(){
 	var opinion = $("#op")[0].value;
+	var categoria = $("#categoria")[0].value;
 	if (opinion.length==0) return;
 
 	$.ajax({
 		type: "POST", 
 		dataType: "json",
-	    data: {"opinion": opinion},
+	    data: {"opinion": opinion, "categoria": categoria},
 	    url: "http://".concat(app.datos.ip,":",app.datos.puerto,"/clasificar"),
 	    crossDomain:true,
 	    datatype:"script",
@@ -42,10 +43,11 @@ function corregirData(){
 
 function sinCorregirOpinion() {
 	var opinion = $("#op")[0].value;
+	var categoria = $("#categoria")[0].value;
 	$.ajax({
 		type: "POST", 
 		dataType: "json",
-	    data: {"opinion": opinion,"cambiar": 0},
+	    data: {"opinion": opinion,"cambiar": 0, "categoria": categoria},
 	    url: "http://".concat(app.datos.ip,":",app.datos.puerto,"/guardarOpinion"),
 	    crossDomain:true,
 	    datatype:"script",
@@ -62,12 +64,12 @@ function sinCorregirOpinion() {
 }
 
 function corregirOpinion() {
-
 	var opinion = $("#op")[0].value;
+	var categoria = $("#categoria")[0].value;
 	$.ajax({
 		type: "POST", 
 		dataType: "json",
-	    data: {"opinion": opinion, "cambiar": 1},
+	    data: {"opinion": opinion, "cambiar": 1, "categoria": categoria},
 	    url: "http://".concat(app.datos.ip,":",app.datos.puerto,"/guardarOpinion"),
 	    crossDomain:true,
 	    datatype:"script",

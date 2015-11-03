@@ -24,8 +24,9 @@
 	</head>
 	<body>
 	<?php 
-		include "menu.php" 
-		include "funcionesGaleria.php"
+		include "menu.php";
+		include "funcionesGaleria.php";
+		$porcentaje = categorias();
 	?>	
 	
 	<center>
@@ -38,23 +39,23 @@
 			  		<tr>
 				    	<td>Solo</td>
 				    	<td><img id="logo" src="imagen/pos.png"></td> 
-				    	<td>porcentaje</td>
+				    	<td><?=number_format($porcentaje[0],2);?>%</td>
 				    	<td><img id="logo" src="imagen/neg.png"></td> 
-				    	<td><?=categorias();?></td>
+				    	<td><?=number_format($porcentaje[1],2);?>%</td>
 				  	</tr>
 				  	<tr>
 				    	<td>Pareja</td>
 				    	<td><img id="logo" src="imagen/pos.png"></td> 
-				    	<td>porcentaje</td>
+				    	<td><?=number_format($porcentaje[2],2);?>%</td>
 				    	<td><img id="logo" src="imagen/neg.png"></td> 
-				    	<td>porcentaje</td>
+				    	<td><?=number_format($porcentaje[3],2);?>%</td>
 				  	</tr>
 				  	<tr>
 				    	<td>Familia</td>
 				    	<td><img id="logo" src="imagen/pos.png"></td> 
-				    	<td>porcentaje</td>
+				    	<td><?=number_format($porcentaje[4],2);?>%</td>
 				    	<td><img id="logo" src="imagen/neg.png"></td>
-				    	<td>porcentaje</td>
+				    	<td><?=number_format($porcentaje[5],2);?>%</td>
 				  	</tr>
 				</table>
 			</div>

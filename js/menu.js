@@ -1,6 +1,8 @@
 $(function(){
 	$("#login").hide();
 	$("#btn_login").click(function(){
+		$("#usuario")[0].value="";
+		$("#pass")[0].value=""
 		$("#login").slideToggle();
 	})
 })

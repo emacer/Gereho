@@ -26,7 +26,13 @@
 				<h2>Por favor dejenos su opinion</h2>
 				<br>
 				<textarea id="op" name="opinion" rows="10" cols="60"></textarea>
-				<br><br><br>
+				<br><br>
+				<select id="categoria" class="form-control" style="width:10%;">
+					<option value="1">Solo</option>
+					<option value="2">Pareja</option>
+					<option value="3">Familia</option>
+				</select>
+				<br><br>
 				<button class="btn btn-primary" onclick="enviarForm()">Enviar</button>
 				<button class="btn btn-primary" onclick="corregirData()">Corregir</button>
 			</center>
