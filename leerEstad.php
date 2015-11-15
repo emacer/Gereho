@@ -26,7 +26,6 @@
 	
 	$num_docs = $cursor->count();
 
-
     if( $num_docs > 0 )
     {
     	echo '<table class=table table-bordered>';    
@@ -37,7 +36,7 @@
     	echo '<tr><td>'. $cursorp->count() .'</td><td>' . $cursorn->count() .'</td><td>' . $cursor->count() . '</td></tr>';
         echo '</tbody>';
         echo '</table>';
-        echo '<center><img src="torta3D.php?pos='.$cursorp->count().'&neg='.$cursorn->count(). '&total='.$cursor->count().
+        echo '<center><img src="torta3D.php?pos='.$cursorp->count().'&neg='.$cursorn->count(). 
              '&lab1=Total Positivos&lab2=Total Negativos" with="250" height="250"/></center>';
         echo '<br><br>';
 
@@ -50,8 +49,10 @@
         echo '<tr><td>'. $cursorfn->count() .'</td><td>' . $cursorp->count() . '</td></tr>';
         echo '</tbody>';
         echo '</table>';
-        echo '<center><img src="torta3D.php?pos='.$cursorfn->count().'&neg='.($cursorp->count() - $cursorfn->count()).
-             '&lab1=Falsos Negativos&lab2=Total Positivos" with="250" height="250"/></center>';
+        if ( $cursorp->count() > 0){
+            echo '<center><img src="torta3D.php?pos='.$cursorfn->count().'&neg='.($cursorp->count() - $cursorfn->count()).
+                 '&lab1=Falsos Negativos&lab2=Total Positivos" with="250" height="250"/></center>';
+        }
         echo '<br><br>';
 
 
@@ -63,8 +64,10 @@
         echo '<tr><td>'. $cursorfp->count() .'</td><td>' . $cursorn->count() . '</td></tr>';
         echo '</tbody>';
         echo '</table>';
-        echo '<center><img src="torta3D.php?pos='.$cursorfp->count().'&neg='.($cursorn->count() - $cursorfp->count()).
-             '&lab1=Falsos Positivos&lab2=Total Negativas" with="250" height="250"/></center>';
+        if ( $cursorn->count() > 0){
+            echo '<center><img src="torta3D.php?pos='.$cursorfp->count().'&neg='.($cursorn->count() - $cursorfp->count()).
+                 '&lab1=Falsos Positivos&lab2=Total Negativas" with="250" height="250"/></center>';
+        }
     }
     else
     {
