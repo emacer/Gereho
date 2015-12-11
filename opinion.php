@@ -4,6 +4,7 @@
 	 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	 	<link rel="stylesheet" href="css/micss2.css">
 	 	<link rel="stylesheet" href="css/menu.css">
+	 	<link rel="stylesheet" href="css/footer.css">
 	 	<script src="js/jquery.min.js"></script>
 	 	<script src="js/bootstrap.min.js"></script>
 	 	<script src="js/app.js"></script>
@@ -87,5 +88,43 @@
 			</div>
 		</div>
 
+		<div id="footer">
+		    <div class="container">
+		        <div class="row">
+		        	<center><h3 class="footertext">Comuniquese a traves de:</h3></center>
+		            <br>
+		            <div class="col-md-4">
+			            <center>
+			            	<a href="#">
+			                	<img src="imagen/face.png" width=40 heigh=40 alt="the-brains">
+			            	</a>
+			                <br>
+			                <h4 class="footertext">Facebook</h4>
+			            </center>
+		            </div>
+		            <div class="col-md-4">
+		                <center>
+		                	<a href="#">
+		                		<img src="imagen/twitter.png" width=40 heigh=40 alt="...">
+		                	</a>
+		                  	<br>
+		                  	<h4 class="footertext">Twiter</h4>
+		                </center>
+		            </div>
+		            <div class="col-md-4">
+		                <center>
+		                	<a href="#">
+		                  		<img src="imagen/mail.png" width=40 heigh=40 alt="...">
+		                	</a>
+		                  	<br>
+		                  	<h4 class="footertext">Correo</h4>
+		                </center>
+		            </div>
+		        </div>
+		        <div class="row">
+		            <p><center><a href="#">GeReHo - Copyright 2015</a> <p class="footertext">Copyright 2014</p></center></p>
+		        </div>
+		    </div>
+		</div>
 	</body>
 </html>

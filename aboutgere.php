@@ -63,7 +63,7 @@
 			<h3 class="text-warning">D&O</h3>es nuestra empresa.
 			<br/>
 				<address>
-				contacto <img src="imagen/email.jpg" width="20" height="20"> <a href="mailto:webmaster@example.com">aqui</a>.<br> 
+				contacto <img src="imagen/mail.png" width="20" height="20"> <a href="mailto:webmaster@example.com">aqui</a>.<br> 
 				Telefono: 054-280-4496066<br>
 				www.d&o.com<br>
 				P.U, Rawson - - 43°19′00″S - 65°02′00″O<br>
