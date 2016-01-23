@@ -49,7 +49,7 @@
         echo '<tr><td>'. $cursorfn->count() .'</td><td>' . $cursorp->count() . '</td></tr>';
         echo '</tbody>';
         echo '</table>';
-        if ( $cursorp->count() > 0){
+        if ( $cursorfn->count() > 0){
             echo '<center><img src="graphbar.php?grafico=0&pos='.$cursorfn->count().'&neg='.($cursorp->count() - $cursorfn->count()).
                  '&lab1=Falsos Negativos&lab2=Total Positivos" with="250" height="250"/></center>';
         }
@@ -64,7 +64,7 @@
         echo '<tr><td>'. $cursorfp->count() .'</td><td>' . $cursorn->count() . '</td></tr>';
         echo '</tbody>';
         echo '</table>';
-        if ( $cursorn->count() > 0){
+        if ( $cursorfp->count() > 0){
             echo '<center><img src="graphbar.php?grafico=0&pos='.$cursorfp->count().'&neg='.($cursorn->count() - $cursorfp->count()).
                  '&lab1=Falsos Positivos&lab2=Total Negativas" with="250" height="250"/></center>';
         }

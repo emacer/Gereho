@@ -1,0 +1,32 @@
+table.imagetable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #999999;
+	border-collapse: collapse;
+}
+table.imagetable th {
+	font: bold 15px "Trebuchet MS", Verdana, Arial, Helvetica,
+	sans-serif;
+	color: #E0FFFF;	
+	background-image: url(../imagen/fondo.png);
+}
+table.imagetable td {
+	#background:#dcddc0 url('../imagenes/fondo_tr01.png');
+	border-width: 1px;
+	padding: 15px;
+	border-style: solid;
+	border-color: #999999;
+}
+
+#ubicacion{
+	width: 30%;
+	margin-left: 55%;
+	position: absolute;
+	top: 150px;
+}
+
+table{
+	margin-left: 180px;
+}

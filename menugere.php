@@ -22,6 +22,7 @@ if (isset($_GET["salir"])){
 
 		<div class="collapse navbar-collapse" id="barra-collapse">
 			<ul id="super_nav_bar" class="nav navbar-nav">
+				<li><a href="listarReservas.php">Reservas</a></li>
 				<li><a href="estadisticas.php">Estadisticas</a></li>
 				<li><a href="conOpiniones.php">Opiniones</a></li>
 			</ul>
