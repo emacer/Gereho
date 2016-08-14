@@ -2,7 +2,7 @@
 -------------------------------------------------- */
 html {
   position: relative;
-  min-height: 120%;
+  min-height: 100%;
 }
 body {
   /* Margin bottom by footer height */
@@ -13,7 +13,7 @@ body {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 150px;
+  height: 50px;
   background: 
   /* color overlay */ 
     linear-gradient(
@@ -30,12 +30,20 @@ body {
 
 .container {
   width: auto;
-  max-width: 680px;
+  max-width: 100%;
   padding: 0 15px;
 }
 .container .text-muted {
   margin: 20px 0;
 }
 .footertext {
-  color: #ffffff;
+  color: #000000;
+  font-size: 15px;
+  display: inline;
+}
+#links{
+  margin-top: 5px;
+}
+#links>a{
+  margin-left: 10px;
 }

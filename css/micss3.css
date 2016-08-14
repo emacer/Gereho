@@ -7,6 +7,9 @@ table{
 input, textarea{
 	width: 100%;
 }
+#login{
+	z-index: 1;
+}
 
 .placeholder-fix:focus::-webkit-input-placeholder  {color:transparent;}
 .placeholder-fix:focus::-moz-placeholder   {color:transparent;}

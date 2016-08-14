@@ -50,7 +50,7 @@
         echo '</tbody>';
         echo '</table>';
         if ( $cursorfn->count() > 0){
-            echo '<center><img src="graphbar.php?grafico=0&pos='.$cursorfn->count().'&neg='.($cursorp->count() - $cursorfn->count()).
+            echo '<center><img src="torta3D.php?grafico=1&pos='.$cursorfn->count().'&neg='.($cursorp->count()).
                  '&lab1=Falsos Negativos&lab2=Total Positivos" with="250" height="250"/></center>';
         }
         echo '<br><br>';
@@ -65,7 +65,7 @@
         echo '</tbody>';
         echo '</table>';
         if ( $cursorfp->count() > 0){
-            echo '<center><img src="graphbar.php?grafico=0&pos='.$cursorfp->count().'&neg='.($cursorn->count() - $cursorfp->count()).
+            echo '<center><img src="torta3D.php?grafico=0&pos='.$cursorfp->count().'&neg='.($cursorn->count()).
                  '&lab1=Falsos Positivos&lab2=Total Negativas" with="250" height="250"/></center>';
         }
     }

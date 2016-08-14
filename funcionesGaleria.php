@@ -22,12 +22,21 @@ function categorias(){
 	$negFamilia = $collection->find(array('polaridad' => 'neg', 'categoria' => 3))->count();
 	
 	$categorias = array();
-	array_push($categorias, ($posSolo * 100) / (float)$total);
-	array_push($categorias, ($posPareja * 100) / (float)$total);
-	array_push($categorias, ($posFamilia * 100) / (float)$total);
-	array_push($categorias, ($negSolo * 100) / (float)$total);
-	array_push($categorias, ($negPareja * 100) / (float)$total);
-	array_push($categorias, ($negFamilia * 100) / (float)$total);
+	if ($total){
+		array_push($categorias, ($posSolo * 100) / (float)$total);
+		array_push($categorias, ($posPareja * 100) / (float)$total);
+		array_push($categorias, ($posFamilia * 100) / (float)$total);
+		array_push($categorias, ($negSolo * 100) / (float)$total);
+		array_push($categorias, ($negPareja * 100) / (float)$total);
+		array_push($categorias, ($negFamilia * 100) / (float)$total);
+	}else{
+		array_push($categorias, 0);
+		array_push($categorias, 0);
+		array_push($categorias, 0);
+		array_push($categorias, 0);
+		array_push($categorias, 0);
+		array_push($categorias, 0);
+	}
 	// require('FirePHPCore/fb.php');
 	// fb($total);
 	return $categorias;

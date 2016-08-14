@@ -2,8 +2,8 @@
 	 <head>
 	 	<meta charset="UTF-8">
 	 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	 	<link rel="stylesheet" href="css/micss2.css">
 	 	<link rel="stylesheet" href="css/menu.css">
+	 	<link rel="stylesheet" href="css/micss2.css">
 	 	<link rel="stylesheet" href="css/footer.css">
 	 	<script src="js/jquery.min.js"></script>
 	 	<script src="js/bootstrap.min.js"></script>
@@ -28,6 +28,7 @@
 				<br>
 				<textarea id="op" name="opinion" rows="10" cols="60"></textarea>
 				<br><br>
+				<div>Categoria</div>
 				<select id="categoria" class="form-control" style="width:10%;">
 					<option value="1">Solo</option>
 					<option value="2">Pareja</option>
@@ -38,6 +39,24 @@
 				<button class="btn btn-primary" onclick="corregirData()">Corregir</button>
 			</center>
 		</section>
+
+		<div id="footer">
+		    <div class="container">
+	        	<center id="links">
+	        		<h3 class="footertext">Comuniquese a traves de:</h3>
+                	<a href="#">
+	                	<img src="imagen/face.png" width=40 heigh=40 alt="the-brains">
+	            	</a>
+	            	<a href="#">
+                		<img src="imagen/twitter.png" width=40 heigh=40 alt="...">
+                	</a>
+                	<a href="#">
+                  		<img src="imagen/mail.png" width=40 heigh=40 alt="...">
+                	</a>
+	            	<a class="footertext" href="#">GeReHo - Copyright 2016</a>
+	        	</center>
+		    </div>
+		</div>
 
 		<div class="modal fade" id="myModalcla" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-dialog" role="document">
@@ -86,45 +105,6 @@
 				    </div>
 				</div>
 			</div>
-		</div>
-
-		<div id="footer">
-		    <div class="container">
-		        <div class="row">
-		        	<center><h3 class="footertext">Comuniquese a traves de:</h3></center>
-		            <br>
-		            <div class="col-md-4">
-			            <center>
-			            	<a href="#">
-			                	<img src="imagen/face.png" width=40 heigh=40 alt="the-brains">
-			            	</a>
-			                <br>
-			                <h4 class="footertext">Facebook</h4>
-			            </center>
-		            </div>
-		            <div class="col-md-4">
-		                <center>
-		                	<a href="#">
-		                		<img src="imagen/twitter.png" width=40 heigh=40 alt="...">
-		                	</a>
-		                  	<br>
-		                  	<h4 class="footertext">Twiter</h4>
-		                </center>
-		            </div>
-		            <div class="col-md-4">
-		                <center>
-		                	<a href="#">
-		                  		<img src="imagen/mail.png" width=40 heigh=40 alt="...">
-		                	</a>
-		                  	<br>
-		                  	<h4 class="footertext">Correo</h4>
-		                </center>
-		            </div>
-		        </div>
-		        <div class="row">
-		            <p><center><a href="#">GeReHo - Copyright 2015</a> <p class="footertext">Copyright 2014</p></center></p>
-		        </div>
-		    </div>
 		</div>
 	</body>
 </html>

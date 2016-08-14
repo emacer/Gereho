@@ -27,7 +27,7 @@
 			."','".$fhasta."','".$comentario."');";
 	
 	if ($conn->query($sql) === TRUE) {
-	    $respuesta =  "Se inserto correctamente";
+	    $respuesta =  "Su reserva ha sido enviada correctamente";
 	} else {
 	    $respuesta = "Error al insertar en la Base de Datos";
 	}

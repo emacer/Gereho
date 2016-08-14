@@ -77,7 +77,7 @@
 					<td>
 						<div>Encuentre el hotel</div>
 						<div>
-							<a href="https://www.google.com.ar/maps/@-43.3201965,-65.0493716,16z "><img src="imagen/ubicacion.jpg"></a>
+							<a href="https://www.google.com.ar/maps/@-43.3201965,-65.0493716,16z" target="_blank"><img src="imagen/ubicacion.jpg"></a>
 					    </div>
 					</td>
 				</tr>

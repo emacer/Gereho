@@ -1,10 +1,14 @@
 $(function(){
 	$("#login").hide();
-	$("#btn_login").click(function(){
+	$("#btn_login").click(function(e){
 		$("#usuario")[0].value="";
 		$("#pass")[0].value=""
 		$("#login").slideToggle();
-	})
+		e.stopPropagation();
+	});
+	$('body').click(function() {
+    	$("#login").hide();
+	});
 })
 
 function encriptarForm(){
