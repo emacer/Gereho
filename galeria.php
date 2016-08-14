@@ -41,19 +41,19 @@
 				    	<td><img id="logo" src="imagen/pos.png"></td> 
 				    	<td><?=number_format($porcentaje[0],2);?>%</td>
 				    	<td><img id="logo" src="imagen/neg.png"></td> 
-				    	<td><?=number_format($porcentaje[1],2);?>%</td>
+				    	<td><?=number_format($porcentaje[3],2);?>%</td>
 				  	</tr>
 				  	<tr>
 				    	<td>Pareja</td>
 				    	<td><img id="logo" src="imagen/pos.png"></td> 
-				    	<td><?=number_format($porcentaje[2],2);?>%</td>
+				    	<td><?=number_format($porcentaje[1],2);?>%</td>
 				    	<td><img id="logo" src="imagen/neg.png"></td> 
-				    	<td><?=number_format($porcentaje[3],2);?>%</td>
+				    	<td><?=number_format($porcentaje[4],2);?>%</td>
 				  	</tr>
 				  	<tr>
 				    	<td>Familia</td>
 				    	<td><img id="logo" src="imagen/pos.png"></td> 
-				    	<td><?=number_format($porcentaje[4],2);?>%</td>
+				    	<td><?=number_format($porcentaje[2],2);?>%</td>
 				    	<td><img id="logo" src="imagen/neg.png"></td>
 				    	<td><?=number_format($porcentaje[5],2);?>%</td>
 				  	</tr>

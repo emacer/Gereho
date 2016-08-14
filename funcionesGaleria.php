@@ -14,12 +14,12 @@ function categorias(){
 	$collection = $db->reviews;
 
 	$total = $collection->find()->count();
-	$posSolo = $collection->find(array('polaridad' => 'pos', 'categoria' => 1))->count();
-	$posPareja = $collection->find(array('polaridad' => 'pos', 'categoria' => 2))->count();
-	$posFamilia = $collection->find(array('polaridad' => 'pos', 'categoria' => 3))->count();
-	$negSolo = $collection->find(array('polaridad' => 'neg', 'categoria' => 1))->count();
-	$negPareja = $collection->find(array('polaridad' => 'neg', 'categoria' => 2))->count();
-	$negFamilia = $collection->find(array('polaridad' => 'neg', 'categoria' => 3))->count();
+	$posSolo = $collection->find(array('polaridad' => 'pos', 'categoria' => '1'))->count();
+	$posPareja = $collection->find(array('polaridad' => 'pos', 'categoria' => '2'))->count();
+	$posFamilia = $collection->find(array('polaridad' => 'pos', 'categoria' => '3'))->count();
+	$negSolo = $collection->find(array('polaridad' => 'neg', 'categoria' => '1'))->count();
+	$negPareja = $collection->find(array('polaridad' => 'neg', 'categoria' => '2'))->count();
+	$negFamilia = $collection->find(array('polaridad' => 'neg', 'categoria' => '3'))->count();
 	
 	$categorias = array();
 	if ($total){
@@ -37,8 +37,6 @@ function categorias(){
 		array_push($categorias, 0);
 		array_push($categorias, 0);
 	}
-	// require('FirePHPCore/fb.php');
-	// fb($total);
 	return $categorias;
 }
 ?>
